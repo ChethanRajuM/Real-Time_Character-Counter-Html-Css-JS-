@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="/characterCounter_ME.css" />
+  </head>
+  <body>
+    <div id="gparent">
+      <div id="parent">
+        <h1 id="h1">Real-time Character Counter</h1>
+
+        <textarea
+          name=""
+          id="inputtext"
+          placeholder="Write text here....."
+          maxlength="100"
+          oninput="textCount()"
+          onkeydown="textCounts()"
+        ></textarea>
+
+        <div class="one">
+          <h2>Total Charaters: <span id="count">0</span></h2>
+        </div>
+
+        <div class="one" id="one">
+          <h2>Remaining: <span id="remcount">50</span></h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="/characterCounter_ME.js"></script>
+  </body>
+</html>

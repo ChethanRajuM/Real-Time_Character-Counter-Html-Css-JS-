@@ -1,0 +1,111 @@
+body {
+    background-image: url("/img/black-1072366_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeats;
+    background-attachment: fixed;
+}
+
+#gparent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    width: 40%;
+    height: 50vh;
+    margin: auto;
+    box-shadow: 2px 2px 15px 2px grey;
+    margin-top: 12%;
+    background-color: white;
+    border-radius: 12px;
+
+
+}
+
+#remcount {
+    color: red;
+}
+
+#count {
+    color: blue;
+}
+
+#one {
+    float: right;
+    position: relative;
+    bottom: 66px;
+}
+
+#inputtext {
+    padding: 5px;
+    width: 80%;
+
+    height: 15vh;
+    font-size: large;
+    background-color: rgb(240, 234, 234);
+}
+
+#inputtext:focus {
+    background-color: aquamarine;
+
+}
+
+@media screen and (min-width:220px) and (max-width:1200px) {
+    #gparent {
+        width: 80%;
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    #gparent {
+        width: 80%;
+        height: 50vh;
+        font-size: small;
+    }
+
+    #inputtext {
+        padding: 3px;
+        width: 50%;
+        height: 8vh;
+        font-size: medium;
+        width: 70%;
+        position: relative;
+        left: 40px;
+    }
+
+    #one {
+        font-size: small;
+        position: relative;
+        bottom: 54px;
+        display: block;
+    }
+
+    .one {
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    #h1 {
+        font-size: large;
+    }
+
+    #inputtext {
+        position: relative;
+        left: 20px;
+    }
+
+    .one h2 {
+        font-size: 14px;
+    }
+
+    #one {
+        position: relative;
+        left: -12px;
+        top: -40px;
+    }
+
+}
